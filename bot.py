@@ -50,7 +50,7 @@ class Bot(Client):
             except Exception as e:
                 self.LOGGER(__name__).warning(e)
                 self.LOGGER(__name__).warning("Bot can't export join request link from FORCE_SUB_CHANNEL2!")
-                self.LOGGER(__name__).warning(f"Please double-check the FORCE_SUB_CHANNEL2 value and ensure the bot is admin with 'Invite Users via Link' permission. Value: {FORCE_SUB_CHAN>
+                self.LOGGER(__name__).warning(f"Please double-check the FORCE_SUB_CHANNEL2 value and ensure the bot is admin with 'Invite Users via Link' permission. Value: {FORCE_SUB_CHANNEL2}")
                 self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Animetalks0 for support")
                 sys.exit()
 
@@ -62,8 +62,8 @@ class Bot(Client):
             except Exception as e:
                 self.LOGGER(__name__).warning(e)
                 self.LOGGER(__name__).warning("Bot can't export join request link from FORCE_SUB_CHANNEL!")
-                self.LOGGER(__name__).warning(f"Please double-check the FORCE_SUB_CHANNEL value and ensure the bot is admin with 'Invite Users via Link' permission. Value: {FORCE_SUB_CHANN>
-                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Animetalks0 for support")
+                self.LOGGER(__name__).warning(f"Please double-check the FORCE_SUB_CHANNEL value and ensure the bot is admin with 'Invite Users via Link' permission. Value: {FORCE_SUB_CHANNEL}")
+                self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Apatheticyash for support")
                 sys.exit()
 
         # Handle Database Channel
@@ -75,7 +75,7 @@ class Bot(Client):
         except Exception as e:
             self.LOGGER(__name__).warning(e)
             self.LOGGER(__name__).warning(f"Ensure the bot is admin in the DB Channel and check CHANNEL_ID. Value: {CHANNEL_ID}")
-            self.LOGGER(__name__).info("\nBot Stopped. Join https://t.me/Animetalks0 for support")
+            self.LOGGER(__name__).info("\nBot Stopped. talk to https://t.me/Apatheticyash for support")
             sys.exit()
 
         self.set_parse_mode(ParseMode.HTML)
